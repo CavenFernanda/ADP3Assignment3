@@ -35,8 +35,8 @@ public class Faculty {
         private String name;
         private String phone;
 
-        public Builder() {
-
+        public Faculty build(){
+            return new Faculty(this);
         }
 
         public Builder withFacultyID(int facultyID) {
