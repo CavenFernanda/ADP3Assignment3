@@ -6,4 +6,62 @@ package za.ac.cput.Entity;
    Date: 05 June 2021
  */
 public class Faculty {
+
+    private final int facultyID;
+    private final String name;
+    private final String phone;
+
+    private Faculty(Builder builder) {
+        this.facultyID = builder.facultyID;
+        this.name = builder.name;
+        this.phone = builder.phone;
+    }
+
+    public int getFacultyID() {
+        return facultyID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public static class Builder {
+
+        private int facultyID;
+        private String name;
+        private String phone;
+
+        public Builder() {
+
+        }
+
+        public Builder withFacultyID(int facultyID) {
+            this.facultyID = facultyID;
+            return this;
+        }
+
+        public Builder withName(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public Builder withPhone(String phone) {
+            this.phone = phone;
+            return this;
+        }
+    }
+
+
+    @Override
+    public String toString() {
+        return "Faculty{" +
+                "facultyID=" + facultyID +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
+    }
 }
