@@ -1,4 +1,4 @@
-package za.ac.cput.Department;
+package za.ac.cput.Entity;
 
 /* Department.java
    Entity for Department
