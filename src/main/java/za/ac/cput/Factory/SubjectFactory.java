@@ -16,7 +16,12 @@ public class SubjectFactory
 
 public static Subject build(String subjectName,String subjectCredits,int subjectID,int lecturerID)
 {
-    //
+    //Condition for the object
+
+    if(subjectName.isEmpty() || subjectCredits.isBlank())
+    {
+        return new Subject.Builder().s
+    }
 }
 
 }
