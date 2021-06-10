@@ -14,25 +14,25 @@ import za.ac.cput.Entity.Subject;
 public class SubjectFactory
 {
 
-public static Subject build(String subjectName,String subjectCredits,int subjectID,int lecturerID)
-{
-    //Condition for the object
-
-    if(subjectName.isEmpty() || subjectCredits.isBlank())
+    public static Subject build(String subjectName,String subjectCredits,int subjectID,int lecturerID)
     {
-        return new Subject.Builder()
-                .subjectName("PHP Fundamentals")
-                .subjectCredit("NQF36")
-                .build();
-    }
+        //Condition for the object
 
-    else
-    {
-        return new Subject.Builder()
-                .subjectID(12)
-                .lecturerID(26)
-                .build();
+        if(subjectName.isEmpty() || subjectCredits.isBlank())
+        {
+            return new Subject.Builder()
+                    .subjectName("PHP Fundamentals")
+                    .subjectCredit("NQF36")
+                    .build();
+        }
+
+        else
+        {
+            return new Subject.Builder()
+                    .subjectID(12)
+                    .lecturerID(26)
+                    .build();
+        }
     }
-}
 
 }
