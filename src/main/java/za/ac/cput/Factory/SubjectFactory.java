@@ -20,7 +20,18 @@ public static Subject build(String subjectName,String subjectCredits,int subject
 
     if(subjectName.isEmpty() || subjectCredits.isBlank())
     {
-        return new Subject.Builder().s
+        return new Subject.Builder()
+                .subjectName("PHP Fundamentals")
+                .subjectCredit("NQF36")
+                .build();
+    }
+
+    else
+    {
+        return new Subject.Builder()
+                .subjectID(12)
+                .lecturerID(20)
+                .build();
     }
 }
 
