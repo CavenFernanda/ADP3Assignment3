@@ -72,5 +72,21 @@ public class Test {
 
             return this;
         }
+
+        public String getTestID() {
+            return testID;
+        }
+
+        public String getLecturerID() {
+            return lecturerID;
+        }
+
+        public String getTestInfo() {
+            return testInfo;
+        }
+
+        public LocalDate getTestDate() {
+            return testDate;
+        }
     }
 }
