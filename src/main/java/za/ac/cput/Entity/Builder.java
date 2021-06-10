@@ -1,5 +1,7 @@
 package za.ac.cput.Entity;
 
+import java.time.LocalDate;
+
 public class Builder {
 
     public static void main(String[] args) {
@@ -12,6 +14,26 @@ public class Builder {
 
         System.out.println(university);
         System.out.println(faculty);
+
+        //student and test method
+
+        Student student = new Student.Builder().setStudentNumber(218328591)
+                .setFirstName("Athi")
+                .setLastName("Fukama")
+                .setStudentEmail("athif@gmail.com")
+                .setCourseID("362S")
+                .build();
+
+
+
+        Test test = new Test.Builder().setTestID("362S")
+                .setLecturerID("2021S")
+                .setTestInfo("ADP# Assignment")
+                .setTestDate(LocalDate.of(2019, 12, 1))
+                .build();
+
+        System.out.println(student);
+        System.out.println(test);
     }
 
 }

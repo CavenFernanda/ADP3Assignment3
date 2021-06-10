@@ -80,5 +80,25 @@ public class Student {
 
             return this;
         }
+
+        public int getStudentNumber() {
+            return studentNumber;
+        }
+
+        public String getFirstName() {
+            return firstName;
+        }
+
+        public String getLastName() {
+            return lastName;
+        }
+
+        public String getStudentEmail() {
+            return studentEmail;
+        }
+
+        public String getCourseID() {
+            return courseID;
+        }
     }
 }
