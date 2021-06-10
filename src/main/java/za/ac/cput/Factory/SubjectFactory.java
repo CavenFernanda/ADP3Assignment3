@@ -30,7 +30,7 @@ public static Subject build(String subjectName,String subjectCredits,int subject
     {
         return new Subject.Builder()
                 .subjectID(12)
-                .lecturerID(20)
+                .lecturerID(26)
                 .build();
     }
 }
