@@ -12,8 +12,8 @@ package za.ac.cput.Entity;
 
 public class Subject
 {
-    private String subjectName,subjectCredit;
-    private int subjectID,lecturerID;
+    private final String subjectName,subjectCredit;
+    private final int subjectID,lecturerID;
 
 
 
@@ -34,6 +34,9 @@ public class Subject
     {
         private String subjectName,subjectCredit;
         private int subjectID,lecturerID;
+
+
+        public Builder(){}
 
         public Builder subjectName(String subjectName)
         {
@@ -99,6 +102,7 @@ public class Subject
     public void getSubjectInformation()
     {
         // String.format("SubjectName: %S/nSubjectCredit: %S /n SubjectID: %D /nLecturerID: %D",getSubjectName(),getSubjectCredit(),getSubjectID(),getLecturerID());
+
         toString();
     }
 
