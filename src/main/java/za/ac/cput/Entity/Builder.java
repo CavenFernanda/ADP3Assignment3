@@ -44,7 +44,7 @@ public class Builder {
                 .lecturerID(12)
                 .build();
 
-
+        System.out.println(subject);
 
 
     }
