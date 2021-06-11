@@ -7,7 +7,7 @@ Author: Athi Fukama 218328591
 Date :11 June 2021
  */
 public class Student {
-    private int studentNumber;
+    private String studentNumber;
     private String firstName;
     private String lastName;
     private String studentEmail;
@@ -34,13 +34,13 @@ public class Student {
     }
     // Builder Class
     public static class Builder {
-        private int studentNumber;
+        private String studentNumber;
         private String firstName;
         private String lastName;
         private String studentEmail;
         private String courseID;
 
-        public Builder setStudentNumber(int studentNumber) {
+        public Builder setStudentNumber(String studentNumber) {
             this.studentNumber = studentNumber;
             return this;
         }
@@ -81,7 +81,7 @@ public class Student {
             return this;
         }
 
-        public int getStudentNumber() {
+        public String getStudentNumber() {
             return studentNumber;
         }
 
@@ -100,5 +100,6 @@ public class Student {
         public String getCourseID() {
             return courseID;
         }
+
     }
 }

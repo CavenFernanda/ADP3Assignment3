@@ -12,13 +12,13 @@ public class Test {
     private String testID;
     private String lecturerID;
     private String testInfo;
-    private LocalDate testDate;
+
 
     private Test(Test.Builder builder) {
         this.testID = builder.testID;
         this.lecturerID = builder.lecturerID;
         this.testInfo = builder.testInfo;
-        this.testDate = builder.testDate;
+
     }
 
     @Override
@@ -27,7 +27,6 @@ public class Test {
                 "testID='" + testID + '\'' +
                 ", lecturerID='" + lecturerID + '\'' +
                 ", testInfo='" + testInfo + '\'' +
-                ", testDate=" + testDate +
                 '}';
     }
 
@@ -36,7 +35,7 @@ public class Test {
         private String testID;
         private String lecturerID;
         private String testInfo;
-        private LocalDate testDate;
+
 
 
         public Builder setTestID(String testID) {
@@ -54,10 +53,6 @@ public class Test {
             return this;
         }
 
-        public Builder setTestDate(LocalDate testDate) {
-            this.testDate = testDate;
-            return this;
-        }
 
         public Test build() {
             return new Test(this);
@@ -68,7 +63,7 @@ public class Test {
             this.testID = test.testID;
             this.lecturerID = test.lecturerID;
             this.testInfo = test.testInfo;
-            this.testDate = test.testDate;
+
 
             return this;
         }
@@ -85,8 +80,6 @@ public class Test {
             return testInfo;
         }
 
-        public LocalDate getTestDate() {
-            return testDate;
-        }
+
     }
 }
