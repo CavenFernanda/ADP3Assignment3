@@ -7,7 +7,7 @@ package za.ac.cput.Entity;
  */
 public class Faculty {
 
-    private final int facultyID;
+    private final String facultyID;
     private final String name;
     private final String phone;
 
@@ -17,7 +17,7 @@ public class Faculty {
         this.phone = builder.phone;
     }
 
-    public int getFacultyID() {
+    public String getFacultyID() {
         return facultyID;
     }
 
@@ -31,7 +31,7 @@ public class Faculty {
 
     public static class Builder {
 
-        private int facultyID;
+        private String facultyID;
         private String name;
         private String phone;
 
@@ -39,7 +39,7 @@ public class Faculty {
             return new Faculty(this);
         }
 
-        public Builder withFacultyID(int facultyID) {
+        public Builder withFacultyID(String facultyID) {
             this.facultyID = facultyID;
             return this;
         }

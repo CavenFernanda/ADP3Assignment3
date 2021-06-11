@@ -12,7 +12,6 @@ package za.ac.cput.Entity;
 
 public class Subject
 {
-    private final String subjectName,subjectCredit,subjectID,lecturerID;
 
 
 
@@ -32,7 +31,6 @@ public class Subject
 
     public static class Builder
     {
-        private String subjectName,subjectCredit,subjectID,lecturerID;
 
 
 

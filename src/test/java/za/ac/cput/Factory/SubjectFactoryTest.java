@@ -31,20 +31,7 @@ class SubjectFactoryTest
  void setup()
 {
 
-    sub1 = new Subject.Builder().subjectName("PHP");
-    sub2 = new Subject.Builder().subjectName("JAVA");
-    sub3=sub1;
 
-}
-
-//Object Equality
-    @Test
-
-     void testObjectEquality()
-    {
-        //Shallow Comparison (==)
-        assertSame(sub1,sub3);
-    }
 
 //Object Identity
     @Test
