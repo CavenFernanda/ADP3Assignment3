@@ -14,7 +14,7 @@ import za.ac.cput.Entity.Subject;
 public class SubjectFactory
 {
 
-    public static Subject build(String subjectName,String subjectCredits,int subjectID,int lecturerID)
+    public static Subject build(String subjectName,String subjectCredits,String subjectID,String lecturerID)
     {
         //Condition for the object
 
@@ -29,7 +29,7 @@ public class SubjectFactory
         else
         {
             return new Subject.Builder()
-                    .subjectID(12)
+                    .subjectID("12")
                     .lecturerID("26")
                     .build();
         }
