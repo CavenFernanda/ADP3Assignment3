@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Builder {
 
     public static void main(String[] args) {
-        University university = new University.Builder().withUniversityID(15484).withName("Cape Peninsula University of Technology")
+        University university = new University.Builder().withUniversityID("15484").withName("Cape Peninsula University of Technology")
                 .withCity("Cape Town").withAddress("Corner of Hanover and Tennant Street\n" +
                         "Zonnebloem").build();
 
