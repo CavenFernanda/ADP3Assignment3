@@ -35,7 +35,7 @@ public class Test {
         private String testID;
         private String lecturerID;
         private String testInfo;
-
+        private int id;
 
 
         public Builder setTestID(String testID) {
@@ -81,5 +81,9 @@ public class Test {
         }
 
 
+        public Test.Builder id(int id) {
+            this.id = id;
+            return this;
+        }
     }
 }

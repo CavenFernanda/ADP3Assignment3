@@ -30,7 +30,7 @@ public class SubjectFactory
         {
             return new Subject.Builder()
                     .subjectID(12)
-                    .lecturerID(26)
+                    .lecturerID("26")
                     .build();
         }
     }

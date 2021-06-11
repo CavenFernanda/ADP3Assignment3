@@ -13,7 +13,8 @@ package za.ac.cput.Entity;
 public class Subject
 {
     private final String subjectName,subjectCredit;
-    private final int subjectID,lecturerID;
+    private final int subjectID;
+    private final String lecturerID;
 
 
 
@@ -33,7 +34,8 @@ public class Subject
     public static class Builder
     {
         private String subjectName,subjectCredit;
-        private int subjectID,lecturerID;
+        private int subjectID;
+        private String lecturerID;
 
 
         public Builder(){}
@@ -56,7 +58,7 @@ public class Subject
             return this;
         }
 
-        public Builder lecturerID(int lecturerID)
+        public Builder lecturerID(String lecturerID)
         {
             this.lecturerID=lecturerID;
             return this;
@@ -93,7 +95,7 @@ public class Subject
         return subjectID;
     }
 
-    public int getlecturerID() {
+    public String getlecturerID() {
         return lecturerID;
     }
 
