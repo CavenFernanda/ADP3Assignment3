@@ -26,13 +26,7 @@ public class Builder {
 
 
 
-        Test test = new Test.Builder().setTestID("362S")
-                .setLecturerID("2021S")
-                .setTestInfo("ADP3 Assignment")
-                .build();
 
-        System.out.println(student);
-        System.out.println(test);
 
         //Subject
 
@@ -40,7 +34,7 @@ public class Builder {
                 .subjectName("Python Fundamentals")
                 .subjectID(78)
                 .subjectCredit("NQF36")
-                .lecturerID(12)
+                .lecturerID("12")
                 .build();
 
         System.out.println(subject);
