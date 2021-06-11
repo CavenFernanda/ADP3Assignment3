@@ -13,7 +13,6 @@ public class UniversityFactory {
     public static University buildUniversity(String name, String city, String address){
         String universityID = GenericHelper.generateID();
 
-        University uni = new University.Builder().withUniversityID(universityID).withName(name).withCity(city).withAddress(address).build();
-        return uni;
+        return new University.Builder().withUniversityID(universityID).withName(name).withCity(city).withAddress(address).build();
     }
 }

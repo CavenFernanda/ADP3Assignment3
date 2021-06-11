@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import za.ac.cput.Entity.Faculty;
-import za.ac.cput.Entity.Lecturer;
 
 import static org.junit.jupiter.api.Assertions.*;
 
