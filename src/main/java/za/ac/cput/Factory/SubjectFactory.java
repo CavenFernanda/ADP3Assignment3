@@ -29,8 +29,8 @@ public class SubjectFactory
         else
         {
             return new Subject.Builder()
-                    .subjectID(12)
-                    .lecturerID(26)
+                    .subjectID("A12")
+                    .lecturerID("krub12")
                     .build();
         }
     }
