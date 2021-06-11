@@ -32,7 +32,7 @@ public class Builder {
 
         Subject subject = new Subject.Builder()
                 .subjectName("Python Fundamentals")
-                .subjectID(78)
+                .subjectID("78")
                 .subjectCredit("NQF36")
                 .lecturerID("12")
                 .build();
