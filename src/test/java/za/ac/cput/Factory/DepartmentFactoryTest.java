@@ -19,7 +19,7 @@ class DepartmentFactoryTest {
     Department department = DepartmentFactory.build("Information Communication Technology","0213456789",1);
 
 
-    //test Object Equality
+    //Test Object Equality
     @Test
     public void objectEquality()
     {
@@ -28,7 +28,7 @@ class DepartmentFactoryTest {
         assertNotEquals(department2,department);
     }
 
-    //test Object Identity
+    //Test Object Identity
     @Test
     public void objectIdentity()
     {
@@ -37,12 +37,14 @@ class DepartmentFactoryTest {
         assertEquals(department2,department);
     }
 
-    //test Timeout
+    //Test Timeout
     @Test
     @Timeout(1)
     public void timeoutTest()
     {
-        objectIdentity();
+        Department department2 = department;
+
+        assertEquals(department2,department);
     }
 
     //Disable Test
