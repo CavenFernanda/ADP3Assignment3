@@ -17,7 +17,7 @@ public class Builder {
 
         //student and test method
 
-        Student student = new Student.Builder().setStudentNumber(218328591)
+        Student student = new Student.Builder().setStudentNumber("21832556457")
                 .setFirstName("Athi")
                 .setLastName("Fukama")
                 .setStudentEmail("athif@gmail.com")
@@ -28,8 +28,7 @@ public class Builder {
 
         Test test = new Test.Builder().setTestID("362S")
                 .setLecturerID("2021S")
-                .setTestInfo("ADP# Assignment")
-                .setTestDate(LocalDate.of(2019, 12, 1))
+                .setTestInfo("ADP3 Assignment")
                 .build();
 
         System.out.println(student);

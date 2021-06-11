@@ -26,7 +26,7 @@ class SubjectFactoryTest
  void setup()
 {
 
-    sub1 = new Subject();
+   // sub1 = new Subject();
 
 }
 
